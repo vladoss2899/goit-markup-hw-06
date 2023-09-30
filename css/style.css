@@ -102,6 +102,8 @@ address {
   border: 1px solid rgb(219, 218, 218);
   background-color: #ffffff;
   margin-bottom: 40px;
+  padding: 0;
+  line-height: 0;
 }
 
 .mob-menu-link {
@@ -165,8 +167,7 @@ address {
 
 .mob-menu-network {
   display: flex;
-  justify-content: space-around;
-  gap: 56px;
+  justify-content: space-between;
 }
 
 .mob-menu-contacts {
@@ -1012,8 +1013,7 @@ address {
 }
 
 .footer-subscribe {
-  margin-top: 72px;
-  margin-left: 50px;
+  margin-left: auto;
 }
 
 .modal-icon-icon {
@@ -1039,7 +1039,7 @@ address {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 0px) and (max-width: 320px) {
   .container {
     max-width: 428px;
   }
@@ -1058,20 +1058,24 @@ address {
     margin-right: 0;
   }
 
-  .section-two-items {
-    margin-top: 72px;
-  }
-
-  .subject-list-teammate {
-    margin-top: 72px;
-  }
-
   .btn-footer {
     margin: 0;
   }
 
   .media-text {
     text-align: center;
+  }
+
+  .mob-number-link {
+    font-size: 16px;
+  }
+
+  .mob-menu-link2 {
+    color: #404bbf;
+  }
+
+  .btn-submit {
+    margin: 24px 120px 0 55px;
   }
 }
 
@@ -1651,6 +1655,10 @@ address {
 
   .contacts-list-link {
     font-size: 16px;
+  }
+
+  .mob-menu-link2 {
+    margin: 24px 120px 0 87px;
   }
 }
 
