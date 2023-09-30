@@ -666,6 +666,7 @@ address {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 72px;
 }
 
 .footer-list {
@@ -947,7 +948,7 @@ address {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: transparent;
-  margin-right: 24px;
+  /* margin-right: 24px; */
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -1030,7 +1031,7 @@ address {
 
 @media screen and (max-width: 768px) {
   .email-footer {
-    width: 288px;
+    width: 317px;
     margin-left: auto;
   }
 
@@ -1039,13 +1040,9 @@ address {
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   .container {
-    max-width: 428px;
-  }
-
-  .container-tabl {
-    max-width: 296px;
+    max-width: 425px;
   }
 
   .footer-form {
@@ -1054,7 +1051,6 @@ address {
   }
 
   .logo-div2 {
-    margin-top: 72px;
     margin-right: 0;
   }
 
@@ -1076,6 +1072,25 @@ address {
 
   .btn-submit {
     margin: 24px 120px 0 55px;
+  }
+
+  .subject-list-teammate {
+    margin-bottom: 72px;
+  }
+
+  .subject-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .list-btn {
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    row-gap: 24px;
+    flex-wrap: wrap;
   }
 }
 
@@ -1137,6 +1152,7 @@ address {
   .subject-list-teammate {
     width: calc((100% - 24px) / 2);
     display: inline-block;
+    margin-bottom: 0;
   }
 
   .company-item {
@@ -1238,7 +1254,7 @@ address {
     display: flex;
     flex-wrap: wrap;
     gap: 72px 24px;
-
+    justify-content: flex-start;
     align-items: flex-start;
   }
 
@@ -1257,6 +1273,23 @@ address {
   .media-text {
     text-align: start;
   }
+
+  .title-footer {
+    display: flex;
+  }
+
+  .footer-subscribe {
+    margin: 0;
+  }
+
+  .list-btn {
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    row-gap: 24px;
+    flex-wrap: wrap;
+}
 }
 
 .logo-div {
@@ -1535,10 +1568,6 @@ address {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .logo-div {
-    margin-right: 120px;
-  }
-
   .media-text {
     font-weight: 500;
     line-height: 1.5;
@@ -1551,7 +1580,6 @@ address {
     display: flex;
     align-items: baseline;
     flex-wrap: nowrap;
-    gap: unset;
   }
 
   .footer {
